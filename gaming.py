@@ -42,7 +42,12 @@ with col2:
       else:
         AddComputer()
 with col3:
-    st.header("An owl")
-    st.image("https://static.streamlit.io/examples/owl.jpg")
+    if st.button("Scissors"):
+      Computerguess = random.choice(('Rock','Paper'))
 
+      st.write('Computer used {}'.format(Computerguess))
+      if (Computerguess == "Paper"):
+        AddPlayer()
+      else:
+        AddComputer()
 
