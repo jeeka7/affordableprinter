@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import random
 
 scoredict = {
   "Player":0,"Computer":0,
