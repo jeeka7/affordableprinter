@@ -10,7 +10,7 @@ if "player" not in st.session_state:
 cl1, cl2 = st.columns(2)
 
 with cl1:
-  st.metric(label="YOU", value=st.session_state.player, delta=None, delta_color="normal")
+  st.metric(label="You", value=st.session_state.player, delta=None, delta_color="normal")
 
 with cl2:
   st.metric(label="Computer", value=st.session_state.computer, delta=None, delta_color="normal")
@@ -53,15 +53,18 @@ with col3:
       else:
         AddComputer()
 
+        
+if st.button("Reset Score"):
+  st.session_state.player = 0
+  st.session_state.computer = 0
+
 if st.button("Finish Game"):
   if ( st.session_state.player > st.session_state.computer ):
    st.write("YOU WON !! :)")
   elif(st.session_state.player < st.session_state.computer):
    st.write("YOU Lost !! :(")
   else:
-   st.write("Its a draw")
+   st.write("It is a Draw")
   
+arr = np.array([st.session_state.player,st.session_state.computer])
 
-if st.button("Reset Score"):
-  st.session_state.player = 0
-  st.session_state.computer = 0
