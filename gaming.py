@@ -21,6 +21,4 @@ if st.button("Rock"):
     AddPlayer()
   else:
     AddComputer()
-st.write('Player score is {}'.format(player))
-st.write('Computer score is {}'.format(computer))
 
