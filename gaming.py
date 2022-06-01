@@ -68,4 +68,3 @@ if st.button("Finish Game"):
   
 arr = [st.session_state.player,st.session_state.computer]
 
-st.bar_chart(arr, width=10, height=10, use_container_width=True)
