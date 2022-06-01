@@ -5,4 +5,5 @@ scoredict = {
   "Player":0,"Computer":0,
 }
 scoredf = pd.DataFrame(scoredict,index=[0])
-st.write(left_align(scoredf))
+scoredf.set_properties(**{'text-align': 'center'}).hide_index()
+st.write(scoredf)
