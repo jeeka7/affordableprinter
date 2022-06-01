@@ -11,9 +11,6 @@ if "computer" not in st.session_state:
   st.session_state.computer = 0
 st.metric(label="Computer", value=st.session_state.computer, delta=None, delta_color="normal")
 
-if st.button("Reset Score"):
-  st.session_state.player = 0
-  st.session_state.computer = 0
 
 def AddPlayer():
  st.session_state.player += 1
@@ -52,3 +49,6 @@ with col3:
       else:
         AddComputer()
 
+if st.button("Reset Score"):
+  st.session_state.player = 0
+  st.session_state.computer = 0
