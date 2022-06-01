@@ -6,6 +6,7 @@ import random
 if "player" not in st.session_state:
   st.session_state.player = 0
 st.write(st.session_state.player)
+st.metric(label="YOU", value=player, delta=None, delta_color="normal")
 if "computer" not in st.session_state:
   st.session_state.computer = 0
 st.write(st.session_state.computer)
