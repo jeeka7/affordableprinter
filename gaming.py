@@ -5,7 +5,7 @@ scoredict = {
   "Player":0,"Computer":0,
 }
 
-if st.button("Rock")
+if st.button("Rock"):
   st.write("Jeeka apna soney uthney ka schedule theek kar le")
 
 scoredf = pd.DataFrame(scoredict,index=[0])
