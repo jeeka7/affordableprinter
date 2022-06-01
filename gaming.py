@@ -8,6 +8,7 @@ if "player" not in st.session_state:
 st.write(st.session_state.player)
 if "computer" not in st.session_state:
   st.session_state.computer = 0
+st.write(st.session_state.computer)
 
 def AddPlayer():
  st.session_state.player += 1
