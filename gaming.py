@@ -5,19 +5,14 @@ import random
 scoredict = {
   "Player":0,"Computer":0,
 }
-def listToString(s): 
-    
-    str1 = " " 
-    
-    return (str1.join(s))
+
 def AddPlayer():
  scoredict["Player"] += 1 
 def AddComputer():
  scoredict["Computer"] += 1 
   
 if st.button("Rock"):
-  Computerguess = random.sample(["Scissors","Paper"],1)
-  st.write(type(listToString(Computerguess)))
+  Computerguess = random.choice("Scissors","Paper")
   st.write(Computerguess)
   st.write('Computer used {}'.format(Computerguess))
   if (Computerguess == "Scissors"):
