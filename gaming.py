@@ -4,6 +4,5 @@ import pandas as pd
 scoredict = {
   "Player":0,"Computer":0,
 }
-#scoredf = pd.DataFrame(scoredict)
-#st.write(scoredf)
-st.write(scoredict)
+scoredf = pd.DataFrame(scoredict)
+st.write(scoredf)
