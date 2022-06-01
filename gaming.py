@@ -20,7 +20,7 @@ if st.button("Rock"):
   st.write(type(listToString(Computerguess)))
   st.write(Computerguess)
   st.write('Computer used {}'.format(Computerguess))
-  if Computerguess == "Scissors":
+  if (Computerguess == "Scissors"):
     Addplayer()
   else:
     AddComputer()
