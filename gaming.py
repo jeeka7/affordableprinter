@@ -16,7 +16,7 @@ if st.button("Rock"):
 
   st.write('Computer used {}'.format(Computerguess))
   if (Computerguess == "Scissors"):
-    Addplayer()
+    AddPlayer()
   else:
     AddComputer()
 scoredf = pd.DataFrame(scoredict,index=[0])
