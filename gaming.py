@@ -26,11 +26,11 @@ with col1:
     if st.button("Rock"):
       Computerguess = random.choice(('Scissors','Paper'))
 
-  st.write('Computer used {}'.format(Computerguess))
-  if (Computerguess == "Scissors"):
-    AddPlayer()
-  else:
-    AddComputer()
+    st.write('Computer used {}'.format(Computerguess))
+    if (Computerguess == "Scissors"):
+      AddPlayer()
+    else:
+      AddComputer()
 
 with col2:
     st.header("A dog")
