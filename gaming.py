@@ -26,7 +26,7 @@ with col1:
     if st.button("Rock"):
       Computerguess = random.choice(('Scissors','Paper'))
 
-    st.write('Computer used {}'.format(Computerguess))
+      st.write('Computer used {}'.format(Computerguess))
     if (Computerguess == "Scissors"):
       AddPlayer()
     else:
