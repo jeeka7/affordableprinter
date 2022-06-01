@@ -5,10 +5,16 @@ import random
 scoredict = {
   "Player":0,"Computer":0,
 }
-
+def listToString(s): 
+    
+    str1 = " " 
+    
+    return (str1.join(s))
+  
 if st.button("Rock"):
   Computerguess = random.sample(["Scissors","Paper"],1)
   st.write("Computer guess is",Computerguess)
+  listToString(Computerguess)
   st.write(type(Computerguess))
 
 scoredf = pd.DataFrame(scoredict,index=[0])
