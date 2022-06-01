@@ -2,17 +2,18 @@ import streamlit as st
 import pandas as pd
 import random
 
+
+if "computer" not in st.session_state:
+  st.session_state.computer = 0
+if "player" not in st.session_state:
+  st.session_state.player = 0
 cl1, cl2 = st.columns(2)
 
 with cl1:
-  if "player" not in st.session_state:
-    st.session_state.player = 0
-    st.metric(label="YOU", value=st.session_state.player, delta=None, delta_color="normal")
+  st.metric(label="YOU", value=st.session_state.player, delta=None, delta_color="normal")
 
 with cl2:
-  if "computer" not in st.session_state:
-    st.session_state.computer = 0
-    st.metric(label="Computer", value=st.session_state.computer, delta=None, delta_color="normal")
+  st.metric(label="Computer", value=st.session_state.computer, delta=None, delta_color="normal")
 
 
 def AddPlayer():
