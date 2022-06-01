@@ -5,6 +5,7 @@ import random
 
 if "player" not in st.session_state:
   st.session_state.player = 0
+st.write(st.session_state.player)
 if "computer" not in st.session_state:
   st.session_state.computer = 0
 
