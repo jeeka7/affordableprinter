@@ -53,6 +53,15 @@ with col3:
       else:
         AddComputer()
 
+if st.button("Finish Game"):
+  if ( st.session_state.player > st.session_state.computer ):
+   st.write("YOU WON !! :)")
+  elif(st.session_state.player < st.session_state.computer):
+   st.write("YOU Lost !! :(")
+  else:
+   st.write("Its a draw")
+  
+
 if st.button("Reset Score"):
   st.session_state.player = 0
   st.session_state.computer = 0
