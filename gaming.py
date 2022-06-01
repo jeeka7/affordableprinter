@@ -24,7 +24,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     if st.button("Rock"):
-  Computerguess = random.choice(('Scissors','Paper'))
+      Computerguess = random.choice(('Scissors','Paper'))
 
   st.write('Computer used {}'.format(Computerguess))
   if (Computerguess == "Scissors"):
