@@ -7,7 +7,7 @@ scoredict = {
 }
 
 def AddPlayer():
- scoredict["Player"] += 1 
+  st.session_state["Player"] += 1
 def AddComputer():
  scoredict["Computer"] += 1 
   
@@ -20,4 +20,4 @@ if st.button("Rock"):
   else:
     AddComputer()
 scoredf = pd.DataFrame(scoredict,index=[0])
-st.table(scoredf)
+st.write(scoredf)
