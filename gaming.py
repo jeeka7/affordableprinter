@@ -12,7 +12,7 @@ def AddComputer():
  scoredict["Computer"] += 1 
   
 if st.button("Rock"):
-  Computerguess = random.choice('Scissors','Paper')
+  Computerguess = random.choice(('Scissors','Paper'))
   st.write(Computerguess)
   st.write('Computer used {}'.format(Computerguess))
   if (Computerguess == "Scissors"):
