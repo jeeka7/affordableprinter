@@ -5,11 +5,11 @@ import random
 
 if "player" not in st.session_state:
   st.session_state.player = 0
-st.write(st.session_state.player)
+
 st.metric(label="YOU", value=st.session_state.player, delta=None, delta_color="normal")
 if "computer" not in st.session_state:
   st.session_state.computer = 0
-st.write(st.session_state.computer)
+st.metric(label="Computer", value=st.session_state.computer, delta=None, delta_color="normal")
 
 if st.button("Reset Score"):
   st.session_state.player = 0
