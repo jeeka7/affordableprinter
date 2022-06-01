@@ -7,7 +7,7 @@ scoredict = {
 }
 
 def AddPlayer():
-  st.session_state["Player"] += 1
+  scoredict["Player"] += 1
 def AddComputer():
  scoredict["Computer"] += 1 
   
