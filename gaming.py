@@ -11,9 +11,9 @@ scoredict={
 
 
 def AddPlayer():
-  scoredict["Player"] += 1
+ st.session_state.scoredict["Player"] += 1
 def AddComputer():
- scoredict["Computer"] += 1 
+ st.session_state.scoredict["Computer"] += 1 
   
 if st.button("Rock"):
   Computerguess = random.choice(('Scissors','Paper'))
