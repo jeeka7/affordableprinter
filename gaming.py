@@ -6,7 +6,8 @@ scoredict = {
 }
 
 if st.button("Rock"):
-  st.write("Jeeka apna soney uthney ka schedule theek kar le")
+  Computerguess = random.sample(["Scissors","Paper"],1)
+  st.write("Computer guess is",Computerguess)
 
 scoredf = pd.DataFrame(scoredict,index=[0])
 st.write(scoredf)
