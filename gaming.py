@@ -2,13 +2,12 @@ import streamlit as st
 import pandas as pd
 import random
 
-if "scoredict" not in st.session_state:
-  st.session_state.scoredict["Player"] = 0
-  st.session_state.scoredict["Computer"] = 0
 scoredict={
 "Player":0,"Computer":0
 }
-
+if "scoredict" not in st.session_state:
+  st.session_state.scoredict["Player"] = 0
+  st.session_state.scoredict["Computer"] = 0
 
 def AddPlayer():
  st.session_state.scoredict["Player"] += 1
