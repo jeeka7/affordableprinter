@@ -13,8 +13,7 @@ def listToString(s):
   
 if st.button("Rock"):
   Computerguess = random.sample(["Scissors","Paper"],1)
-  st.write("Computer guess is",Computerguess)
   st.write(type(listToString(Computerguess)))
-
+  st.write("Computer guess is"+Computerguess)
 scoredf = pd.DataFrame(scoredict,index=[0])
 st.write(scoredf)
