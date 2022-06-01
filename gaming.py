@@ -33,9 +33,14 @@ with col1:
         AddComputer()
 
 with col2:
-    st.header("A dog")
-    st.image("https://static.streamlit.io/examples/dog.jpg")
+    if st.button("Paper"):
+      Computerguess = random.choice(('Rock','Scissor'))
 
+      st.write('Computer used {}'.format(Computerguess))
+      if (Computerguess == "Rock"):
+        AddPlayer()
+      else:
+        AddComputer()
 with col3:
     st.header("An owl")
     st.image("https://static.streamlit.io/examples/owl.jpg")
