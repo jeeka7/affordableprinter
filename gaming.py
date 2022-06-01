@@ -66,5 +66,5 @@ if st.button("Finish Game"):
   else:
    st.write("It is a Draw")
   
-arr = np.array([st.session_state.player,st.session_state.computer])
+arr = [st.session_state.player,st.session_state.computer]
 
