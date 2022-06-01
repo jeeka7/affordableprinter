@@ -2,17 +2,16 @@ import streamlit as st
 import pandas as pd
 import random
 
-scoredict={
-"Player":0,"Computer":0
-}
-if "scoredict" not in st.session_state:
-  st.session_state.scoredict["Player"] = 0
-  st.session_state.scoredict["Computer"] = 0
+
+if "player" not in st.session_state:
+  st.session_state.player = 0
+if "computer" not in st.session_state:
+  st.session_state.computer = 0
 
 def AddPlayer():
- st.session_state.scoredict["Player"] += 1
+ st.session_state.player += 1
 def AddComputer():
- st.session_state.scoredict["Computer"] += 1 
+ st.session_state.computer += 1 
   
 if st.button("Rock"):
   Computerguess = random.choice(('Scissors','Paper'))
@@ -22,5 +21,6 @@ if st.button("Rock"):
     AddPlayer()
   else:
     AddComputer()
-scoredf = pd.DataFrame(scoredict,index=[0])
-st.write(scoredf)
+st.write('Player score is {}'.format(player))
+st.write('Computer score is {}'.format(computer))
+
