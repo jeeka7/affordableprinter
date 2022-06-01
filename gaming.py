@@ -7,8 +7,9 @@ scoredict = {
 }
 
 if st.button("Rock"):
-  Computerguess = random.sample([Scissors,Paper],1)
+  Computerguess = random.sample(["Scissors","Paper"],1)
   st.write("Computer guess is",Computerguess)
+  st.write(dtype(Computerguess))
 
 scoredf = pd.DataFrame(scoredict,index=[0])
 st.write(scoredf)
