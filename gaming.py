@@ -27,10 +27,10 @@ with col1:
       Computerguess = random.choice(('Scissors','Paper'))
 
       st.write('Computer used {}'.format(Computerguess))
-    if (Computerguess == "Scissors"):
-      AddPlayer()
-    else:
-      AddComputer()
+      if (Computerguess == "Scissors"):
+        AddPlayer()
+      else:
+        AddComputer()
 
 with col2:
     st.header("A dog")
