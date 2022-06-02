@@ -30,7 +30,7 @@ def AddComputer():
  st.session_state.y = 1
 
 st.write("Choose from 3 weapons to play against Computer AI")
-st.header("RULES OF THE GAME")
+st.write("RULES OF THE GAME")
 st.write("Rock is strong against Scissors but weak against Paper")
 st.write("Paper is strong against Rock but weak against Scissors")
 st.write("Scissors is strong against Paper but weak against Rock")
