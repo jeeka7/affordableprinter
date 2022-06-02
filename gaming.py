@@ -29,9 +29,9 @@ def AddComputer():
  st.session_state.x = 0
  st.session_state.y = 1
 
-col1, col2, col3 = st.columns(3)
-
 st.write("Choose from 3 weapons to play against Computer AI")
+
+col1, col2, col3 = st.columns(3)
 
 with col1:
     if st.button("Rock"):
