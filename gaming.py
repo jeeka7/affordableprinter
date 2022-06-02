@@ -31,6 +31,8 @@ def AddComputer():
 
 col1, col2, col3 = st.columns(3)
 
+st.write("Choose from 3 weapons to play against Computer AI")
+
 with col1:
     if st.button("Rock"):
       Computerguess = random.choice(('Scissors','Paper'))
