@@ -7,24 +7,27 @@ if "computer" not in st.session_state:
   st.session_state.computer = 0
 if "player" not in st.session_state:
   st.session_state.player = 0
-if "increase" not in st.session_state:
-  st.session_state.increase = 0
+if "x" not in st.session_state:
+  st.session_state.x = 0
+if "y" not in st.session_state:
+  st.session_state.y = 0
 cl1, cl2 = st.columns(2)
 
 with cl1:
-  st.metric(label="You", value=st.session_state.player, delta=st.session_state.increase, delta_color="normal")
+  st.metric(label="You", value=st.session_state.player, delta=st.session_state.x, delta_color="normal")
 
 with cl2:
-  st.metric(label="Computer", value=st.session_state.computer, delta=st.session_state.increase, delta_color="normal")
+  st.metric(label="Computer", value=st.session_state.computer, delta=st.session_state.y, delta_color="normal")
 
 
 def AddPlayer():
  st.session_state.player += 1
- st.session_state.increase = 1
+ st.session_state.x = 1
+ st.session_state.y = 0
 def AddComputer():
  st.session_state.computer += 1
- st.session_state.increase = 1
-
+ st.session_state.x = 0
+ st.session_state.y = 1
 
 col1, col2, col3 = st.columns(3)
 
